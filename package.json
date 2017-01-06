@@ -1,0 +1,27 @@
+{
+  "name": "tavindo-load-data",
+  "version": "0.1.0",
+  "description": "Gather data from different places to build a single database of the bus transport system from Rio de Janeiro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony-async-await index.js",
+    "create:db": "node --harmony-async-await index.js --createDB"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mal98a/tavindo-load-data.git"
+  },
+  "author": "lalkmim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mal98a/tavindo-load-data/issues"
+  },
+  "homepage": "https://github.com/mal98a/tavindo-load-data#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "minimist": "^1.2.0",
+    "pg": "^6.1.2",
+    "request": "^2.79.0"
+  }
+}
