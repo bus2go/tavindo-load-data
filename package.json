@@ -1,6 +1,6 @@
 {
   "name": "tavindo-load-data",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Gather data from different places to build a single database of the bus transport system from Rio de Janeiro",
   "main": "index.js",
   "scripts": {
