@@ -118,7 +118,7 @@ function generateSQL(rows) {
         let tempRows = rows.splice(0, Math.min(blockSize, rows.length));
         
         let sqlArray = generateInsert(tempRows);
-        db.run(sqlArray);
+        db.run(sqlArray.join(' '));
         
         let current = Math.min((i+1)*blocks, total);
         let msg = '\r\b\r\[TABLE\] routes - ' + current + '/' + total + ' = ' + parseInt(100*current / total, 10) + '%\r';
