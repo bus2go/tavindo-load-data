@@ -31,8 +31,9 @@ It was designed to work with PostgreSQL, but you can use any database you want. 
 
 #### Creating your database
 
-Once you installed PostgreSQL, you will need to create your user and schema. If you are clueless on database configuration, all you need to do is execute the two commands below:
+Once you installed PostgreSQL, you will need to create your user and schema. If you are clueless on database configuration, all you need to do is execute the commands below:
 
+    $ sudo service postgresql restart # make sure PostgreSQL is running
     $ createuser -d -P -s <user_name>
     $ createdb -O <user_name> <database_name>
 
